@@ -1,0 +1,563 @@
+/* Universal Styles */
+.kanit-thin {
+    font-family: "Kanit-thin", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+}
+
+.kanit-regular {
+    font-family: "Kanit", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.kanit-bold {
+    font-family: "Kanit-bold", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+.bebas-neue-regular {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.ibm-plex-mono-thin {
+    font-family: "IBM Plex Mono thin", monospace;
+    font-weight: 100;
+    font-style: normal;
+}
+
+.ibm-plex-mono-medium {
+    font-family: "IBM Plex Mono med", monospace;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.ibm-plex-mono-bold {
+    font-family: "IBM Plex Mono Bold", monospace;
+    font-weight: 700;
+    font-style: normal;
+}
+
+html {
+    font-family: "Kanit", sans-serif;
+    font-size: 16px;
+}
+body {
+    margin-left: 0px;
+    margin-right: 0px;
+}
+.main-content {
+    position: relative;
+    top: 78px; /* To offset for fixed header. */
+    width: 100%;
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    box-sizing: border-box;
+}
+
+.center {
+    text-align: center;
+}
+
+.button {
+    border-radius: 4px;
+    background-color: #4a4a4a;
+    color: white;
+}
+
+.image-container {
+    width: 50%;
+    height: 450px;
+    display: flex;
+    align-items: flex-end;
+    flex-grow: 1;
+    background-size: cover; /* Ensures the image covers the entire element */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat;
+}
+
+.image-container img {
+    display: block;
+    max-width: 100%;
+}
+
+@media only screen and (max-width: 760px) {
+    .main-content {
+    top: 2.5625rem;
+    }
+}
+
+/* Header */
+
+header {
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+    border-bottom: solid 1px #c6c1c1;
+    background-color: #f3f3f3;
+    top: 0%;
+    left: 0%;
+}
+header .desktop-name{
+    height: auto;
+    width: 50%;
+    font-family: "Kanit";
+    font-weight: 700;
+    font-size: 2rem;
+    color: #313131;
+    text-decoration: none;
+    margin: 1rem 0;
+} 
+header .content {
+    display: flex;
+    align-items: center;
+    padding: 0 1rem;
+    height: 85px;
+    justify-content: space-between;
+}
+
+header nav ul {
+    display: flex;
+    list-style-type: none;
+}
+
+nav li {
+    padding-left: 2.5rem;
+}
+
+nav a {
+    vertical-align: center;
+    font-size: 1.25rem;
+    color: black;
+    text-decoration: none;
+}
+
+header .icon {
+    width: 1.25rem;
+}
+
+header .mobile {
+    display: none;
+}
+
+@media only screen and (max-width: 760px) {
+    header .desktop {
+    display: none;
+    }
+    header .desktop-logo {
+    display: none;
+    }
+
+    header .mobile {
+    display: block;
+    width: 100%;
+    }
+
+    header .content {
+    padding: .5rem 0;
+    }
+
+    header .mobile ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    padding: 0%;
+    }
+
+    header .mobile li {
+    padding: 0;
+    }
+
+    header .mobile .button {
+    padding: .1875rem .5rem;
+    background-color: #9dc20b;
+    line-height: 1.6;
+    color: white;
+    }
+}
+
+/* Sign Up Section */
+
+#header-section {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 47.75rem;
+    background-image: url('../images/background-coffee.jpg');
+    background-size: cover; /* Ensures the image covers the entire element */
+    background-position: bottom; /* Centers the image */
+    background-repeat: no-repeat;
+    justify-content: space-evenly;
+}
+
+#header-section-cta {
+    position: relative;
+    padding: 2rem 2rem;
+    width: 100%;
+}
+
+#header-section-cta span {
+    font-family: "Bebas Neue", sans-serif;
+    margin: .75rem 0;
+    font-style: italic;
+    color: #f3f3f3;
+}
+
+#header-section-cta .striking {
+    font-family: "Bebas Neue", sans-serif;
+    margin: .75rem 0;
+    font-size: 50px;
+    color: #f3f3f3;
+}
+
+@media only screen and (max-width: 760px) {
+    #header-section {
+    align-items: center;
+    justify-content: center;
+    height: 28rem;
+    }
+
+    #header-section-cta {
+    position: static;
+    width: auto;
+    height: auto;
+    border: none;
+    margin: 0;
+    }
+    #header-section-cta h1 {
+    font-size: 3.125rem;
+    }
+
+    #header-section-cta h2 {
+    font-size: 2.25rem;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    #header-section {
+    height: 20rem;
+    }
+
+    #header-section-cta .striking {
+    font-size: 1.75rem;
+    }
+
+    #header-section-cta h2 {
+    font-size: 1.25rem;
+    }
+}
+
+/* Features Section */
+
+#features-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 4rem 5%;
+    background-color: #f3f3f3;
+    flex-direction: row;
+    align-items: center;
+}
+
+.feature {
+    padding: 2rem;
+    margin: 0px 1.25rem;
+}
+
+.feature .image-container {
+    width: 90%;
+    height: 65%;
+    margin: 0 auto;
+}
+
+#features-section .content-center h2 {
+    padding-bottom: .5rem;
+    font-size: 2.25rem;
+    font-weight: bold;
+    color: #313131;
+}
+
+#features-section .content-center h3 {
+    font-size: 1.25rem;
+    font-weight: 400;
+    color: #313131;
+}
+#features-section .content-center a{
+    padding-bottom: .5rem;
+    font-size: 1.75rem;
+    font-weight: bold;
+    text-decoration: underline;
+    color: #313131;
+}
+.feature .content {
+    padding: 2.5rem 0;
+}
+
+@media only screen and (max-width: 890px) {
+    .feature h2 {
+    font-size: 1.125rem;
+    line-height: 1.3;
+    font-weight: normal;
+    }
+
+    .feature h3 {
+    font-size: .875rem;
+    line-height: 1.4;
+    }
+}
+
+@media only screen and (max-width: 760px) {
+    #features-section {
+    flex-flow: column;
+    padding: 0;
+    }
+
+    .feature {
+    margin: 0;
+    padding: 1.25rem 1rem 0 1rem;
+    }
+}
+
+/* Events Section */
+
+#events-section {
+    padding: 2rem 0;
+    background-color: #4a4a4a;
+}
+#masterclass{
+    background-image: url('../images/masterclass.jpg');
+}
+#taste{
+    background-image: url('../images/taste.jpg');
+}
+#barista{
+    background-image: url('../images/barista.jpg');
+}
+#farm{
+    background-image: url('../images/farm.jpg');
+}
+#events-section .content {
+    padding: 0 .625rem;
+    margin-bottom: 2.5rem;
+    color: white;
+    font-size: 1.75rem;
+}
+
+#events-section .images-container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    max-width: 100%;
+    padding: 0 1%;
+    flex-wrap: wrap;
+}
+#events-section .description {
+    background-color: rgba(0, 0, 0, 0.85);
+    width: 100%;
+    margin: 0;
+    padding: 5px 30px;
+}
+#events-section .description h3{
+    color: white;
+    margin-bottom: 2px;
+    font-size: 1.5rem;
+}
+#events-section .description h4 {
+    color: #9b9b9b;
+    margin: 0;
+    font-weight: 400;
+}
+@media only screen and (max-width: 760px) {
+    #events-section {
+    padding: 1.5rem 0 0 0;
+    }
+
+    #events-section .content {
+    margin-bottom: 1rem;
+    }
+
+    #events-section .content h2 {
+    padding-bottom: .625rem;
+    font-size: 1.125rem;
+    line-height: 1.3;
+    font-weight: normal;
+    }
+
+    #events-section .content h3 {
+    font-size: .875rem;
+    line-height: 1.4;
+    }
+
+    #events-section .images-container {
+    padding: 0;
+    }
+
+    #events-section .extra {
+    display: none;
+    }
+}
+
+/* Blog Section */
+#blog-section {
+    padding: 2rem 0;
+}
+#blog-section .content {
+    padding: 0 .625rem;
+    margin-bottom: 2.5rem;
+    color: white;
+    font-size: 1.75rem;
+}
+
+#blog-section .images-container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    max-width: 100%;
+    padding: 0 1%;
+    flex-wrap: wrap;
+}
+#blog-section .description {
+    background-color: rgba(0, 0, 0, 0.85);
+    width: 100%;
+    margin: 0;
+    padding: 5px 30px;
+}
+#blog-section .description h3{
+    color: white;
+    margin-bottom: 2px;
+    font-size: 1.5rem;
+}
+#blog-section .description h4 {
+    color: #9b9b9b;
+    margin: 0;
+    font-weight: 400;
+}
+@media only screen and (max-width: 760px) {
+    #blog-section {
+    padding: 1.5rem 0 0 0;
+    }
+
+    #blog-section .content {
+    margin-bottom: 1rem;
+    }
+
+    #blog-section .content h2 {
+    padding-bottom: .625rem;
+    font-size: 1.125rem;
+    line-height: 1.3;
+    font-weight: normal;
+    }
+
+    #blog-section .content h3 {
+    font-size: .875rem;
+    line-height: 1.4;
+    }
+
+    #blog-section .images-container {
+    padding: 0;
+    }
+
+    #blog-section .extra {
+    display: none;
+    }
+}
+/* Quotes Section */
+
+#quotes-section {
+    background-color: #f3f3f3;
+}
+
+#quotes-section .content {
+    padding: 5rem 0;
+}
+
+#quotes-section .quote {
+    padding-right: 1.875rem;
+    font-family: "IBM Plex Mono med", serif;
+    font-size: 1.875rem;
+    line-height: 1.1;
+    font-style: italic;
+    color: #4a4a4a;
+}
+
+#quotes-section .quote-citation {
+    height: 1.875rem;
+    overflow-clip-margin: content-box;
+}
+
+@media only screen and (max-width: 760px) {
+    #quotes-section content {
+    padding: 1.875rem .625rem;
+    }
+
+    #quotes-section .quote {
+    font-size: 1.5rem;
+    line-height: 1.4;
+    }
+
+    #quotes-section .quote-citation {
+    display: block;
+    padding-top: 1rem;
+    margin: auto;
+    }
+}
+
+#contact { 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 4rem 5%;
+    background-color: #f3f3f3;
+    align-items: center;
+    margin: 0;
+}
+
+#contact .contact-data, .map { 
+    padding: 2rem;
+    margin: 0px 1.25rem;
+    border-radius: 0.5rem;
+}
+
+#contact .map {
+    width: 600px;
+    height: auto;
+    overflow: hidden;
+    background-color: white;
+}
+#contact .map img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+#contact .contact-data h2{
+    margin-bottom: 2px;
+    font-size: 3rem;
+}
+#contact .contact-data h3{
+    color: #3b3b3b;
+    margin: 2% 0;
+    font-weight: 400;
+}
+/* Footer */
+
+footer {
+    background-color: #9b9b9b;
+    padding: 1.5rem 2rem;
+}
+
+footer .content {
+    color: white;
+    display: flex;
+    font-size: .75rem;
+}
+
+footer .copyright {
+    flex-grow: 1;
+}
+
+@media only screen and (max-width: 760px) {
+    footer .content {
+    font-size: .625rem;
+    }
+}
