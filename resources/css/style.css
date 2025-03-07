@@ -401,11 +401,11 @@ header .mobile {
 /* Blog Section */
 #blog-section {
     padding: 2rem 0;
+    background-color: #f3f3f3;
 }
 #blog-section .content {
     padding: 0 .625rem;
     margin-bottom: 2.5rem;
-    color: white;
     font-size: 1.75rem;
 }
 
