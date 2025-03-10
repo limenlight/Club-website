@@ -84,7 +84,7 @@ body {
 
 @media only screen and (max-width: 760px) {
     .main-content {
-    top: 2.5625rem;
+        top: 2.5625rem;
     }
 }
 
@@ -143,38 +143,37 @@ header .mobile {
 
 @media only screen and (max-width: 760px) {
     header .desktop {
-    display: none;
+        display: none;
     }
-    header .desktop-logo {
-    display: none;
+    header .desktop-name {
+        font-size: 1.5rem;
     }
 
     header .mobile {
-    display: block;
-    width: 100%;
+        display: block;
+        width: 80%;
     }
 
     header .content {
-    padding: .5rem 0;
+        padding: .5rem 0;
+        width: auto;
     }
 
     header .mobile ul {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 100%;
-    padding: 0%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+        padding: 0%;
     }
 
     header .mobile li {
-    padding: 0;
+        padding: 0;
+        height: auto;
     }
 
-    header .mobile .button {
-    padding: .1875rem .5rem;
-    background-color: #9dc20b;
-    line-height: 1.6;
-    color: white;
+    header .icon {
+        width: 1.7rem;
     }
 }
 
@@ -214,38 +213,38 @@ header .mobile {
 
 @media only screen and (max-width: 760px) {
     #header-section {
-    align-items: center;
-    justify-content: center;
-    height: 28rem;
+        align-items: center;
+        justify-content: flex-start;
+        height: 28rem;
     }
 
     #header-section-cta {
-    position: static;
-    width: auto;
-    height: auto;
-    border: none;
-    margin: 0;
+        position: static;
+        width: 70%;
+        height: auto;
+        border: none;
+        margin: 0;
     }
     #header-section-cta h1 {
-    font-size: 3.125rem;
+        font-size: 3.125rem;
     }
 
     #header-section-cta h2 {
-    font-size: 2.25rem;
+        font-size: 2.25rem;
     }
 }
 
 @media only screen and (max-width: 450px) {
     #header-section {
-    height: 20rem;
+        height: 20rem;
     }
 
     #header-section-cta .striking {
-    font-size: 1.75rem;
+        font-size: 1.75rem;
     }
 
     #header-section-cta h2 {
-    font-size: 1.25rem;
+        font-size: 1.25rem;
     }
 }
 
@@ -296,26 +295,25 @@ header .mobile {
 
 @media only screen and (max-width: 890px) {
     .feature h2 {
-    font-size: 1.125rem;
-    line-height: 1.3;
-    font-weight: normal;
+        font-size: 1.125rem;
+        line-height: 1.3;
+        font-weight: normal;
     }
 
     .feature h3 {
-    font-size: .875rem;
-    line-height: 1.4;
+        font-size: .875rem;
+        line-height: 1.4;
     }
 }
 
 @media only screen and (max-width: 760px) {
     #features-section {
-    flex-flow: column;
-    padding: 0;
+        flex-flow: column;
+        padding: 10px;
     }
 
     .feature {
-    margin: 0;
-    padding: 1.25rem 1rem 0 1rem;
+        display: none;
     }
 }
 
@@ -370,31 +368,37 @@ header .mobile {
 }
 @media only screen and (max-width: 760px) {
     #events-section {
-    padding: 1.5rem 0 0 0;
+        padding: 1.5rem 0 0 0;
     }
 
     #events-section .content {
-    margin-bottom: 1rem;
+        margin-bottom: 1rem;
     }
 
     #events-section .content h2 {
-    padding-bottom: .625rem;
-    font-size: 1.125rem;
-    line-height: 1.3;
-    font-weight: normal;
+        padding-bottom: .625rem;
+        font-size: 1.5rem;
+        line-height: 1.3;
+        font-weight: normal;
     }
 
     #events-section .content h3 {
-    font-size: .875rem;
-    line-height: 1.4;
+        font-size: .875rem;
+        line-height: 1.4;
     }
 
     #events-section .images-container {
-    padding: 0;
+        padding: 2%;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    #events-section .image-container {
+        width: 100%;
     }
 
     #events-section .extra {
-    display: none;
+        display: none;
     }
 }
 
@@ -409,57 +413,67 @@ header .mobile {
     font-size: 1.75rem;
 }
 
-#blog-section .images-container {
+#blog-section .blogs-container {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
     max-width: 100%;
     padding: 0 1%;
-    flex-wrap: wrap;
 }
 #blog-section .description {
-    background-color: rgba(0, 0, 0, 0.85);
-    width: 100%;
+    background-color: white;
+    width: 75%;
     margin: 0;
     padding: 5px 30px;
+    border-radius: 1.5rem;
 }
 #blog-section .description h3{
-    color: white;
+    color: #313131;
     margin-bottom: 2px;
     font-size: 1.5rem;
 }
 #blog-section .description h4 {
-    color: #9b9b9b;
+    color: #313131;
     margin: 0;
     font-weight: 400;
 }
+#blog-section .description h5 {
+    color: #313131;
+    font-style: italic;
+    text-decoration: underline;
+    cursor: pointer;
+}
 @media only screen and (max-width: 760px) {
     #blog-section {
-    padding: 1.5rem 0 0 0;
+        padding: 1.5rem 0 0 0;
     }
 
     #blog-section .content {
-    margin-bottom: 1rem;
+        margin-bottom: 1rem;
     }
 
     #blog-section .content h2 {
-    padding-bottom: .625rem;
-    font-size: 1.125rem;
-    line-height: 1.3;
-    font-weight: normal;
+        padding-bottom: .625rem;
+        font-size: 1.5rem;
+        line-height: 1.3;
+        font-weight: normal;
     }
 
     #blog-section .content h3 {
-    font-size: .875rem;
-    line-height: 1.4;
+        font-size: .875rem;
+        line-height: 1.4;
     }
 
-    #blog-section .images-container {
-    padding: 0;
+    #blog-section .blogs-container {
+        padding: 2%;
+        flex-wrap: wrap;
     }
 
-    #blog-section .extra {
-    display: none;
+    #blog-section .blog-container {
+        padding: 2%;
+    }
+    #blog-section .description {
+        width: auto;
     }
 }
 /* Quotes Section */
@@ -539,6 +553,19 @@ header .mobile {
     margin: 2% 0;
     font-weight: 400;
 }
+@media only screen and (max-width: 760px) {
+    #contact {
+        flex-wrap: wrap;
+        padding: 1.5rem;
+    }
+    #contact .contact-data {
+        padding: 1rem;
+    }
+    #contact .contact-data h2{
+        margin-top: 0;
+    }
+}
+
 /* Footer */
 
 footer {
@@ -558,6 +585,6 @@ footer .copyright {
 
 @media only screen and (max-width: 760px) {
     footer .content {
-    font-size: .625rem;
+        font-size: .625rem;
     }
 }
